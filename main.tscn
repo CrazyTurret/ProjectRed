@@ -7,7 +7,7 @@
 [ext_resource path="res://tilesets/dev_test_tileset.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 8, 8 )
+extents = Vector2( 5.91655, 2.04059 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
@@ -512,7 +512,11 @@ script = ExtResource( 3 )
 texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GameWorld/Player"]
+position = Vector2( 0, 5.92335 )
 shape = SubResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="GameWorld/Player"]
+current = true
 
 [node name="TileMap" type="TileMap" parent="GameWorld"]
 z_index = -1
