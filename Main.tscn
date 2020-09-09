@@ -2,7 +2,7 @@
 
 [node name="Main" type="Node"]
 
-[node name="Game_World" type="Node2D" parent="."]
+[node name="GameWorld" type="Node2D" parent="."]
 
 [node name="GUI" type="Control" parent="."]
 margin_right = 40.0
