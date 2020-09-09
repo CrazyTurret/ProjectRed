@@ -1,5 +1,5 @@
 # ProjectRed
-Top secrAet gaming project made by a bunch of fools
+Top secret gaming project made by a bunch of fools
 
 ## Project Version Goals
 These are the list of goals for each version of the game. Will be updated as time goes on.
