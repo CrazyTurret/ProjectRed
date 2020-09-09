@@ -24,6 +24,13 @@ config/name="ProjectRed"
 run/main_scene="res://main.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=960
+window/size/height=540
+window/stretch/mode="viewport"
+window/stretch/shrink=3.0
+
 [gdnative]
 
 singletons=[ "res://git_api.gdnlib" ]
