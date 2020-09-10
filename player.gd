@@ -6,6 +6,8 @@ var velocity = Vector2()
 var lastpressLR = 'L'
 var lastpressUD = 'U'
 
+export(Resource) var stats
+
 func get_input_LR():
 	if not Input.is_action_pressed('left') && not Input.is_action_pressed('right'):
 		return 0
@@ -41,7 +43,7 @@ func get_input_UD():
 			return 0
 
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	velocity = move_and_slide(velocity)
 	velocity.y = get_input_UD()
 	velocity.x = get_input_LR()

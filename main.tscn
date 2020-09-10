@@ -1,10 +1,13 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://main.gd" type="Script" id=1]
 [ext_resource path="res://game_world.gd" type="Script" id=2]
 [ext_resource path="res://player.gd" type="Script" id=3]
 [ext_resource path="res://characters/player/dev_player_sprite.png" type="Texture" id=4]
 [ext_resource path="res://tilesets/dev_test_tileset.png" type="Texture" id=5]
+[ext_resource path="res://label_test.gd" type="Script" id=6]
+
+[sub_resource type="Resource" id=21]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 5.91655, 2.04059 )
@@ -507,6 +510,7 @@ script = ExtResource( 2 )
 
 [node name="Player" type="KinematicBody2D" parent="GameWorld"]
 script = ExtResource( 3 )
+stats = SubResource( 21 )
 
 [node name="Sprite" type="Sprite" parent="GameWorld/Player"]
 texture = ExtResource( 4 )
@@ -531,3 +535,8 @@ margin_bottom = 40.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Label" type="Label" parent="GUI"]
+margin_right = 40.0
+margin_bottom = 14.0
+script = ExtResource( 6 )

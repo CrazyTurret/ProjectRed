@@ -24,6 +24,10 @@ config/name="ProjectRed"
 run/main_scene="res://main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+InventorySystem="*res://inventory_system.gd"
+
 [display]
 
 window/size/width=960
